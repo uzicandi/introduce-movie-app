@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import './Detail.css';
+import ReactStars from 'react-rating-stars-component';
 
 function Detail({ match, history }) {
   const id = match.params.id;
@@ -34,22 +36,35 @@ function Detail({ match, history }) {
   console.log('movie', movie);
 
   return (
-    <div className="movie__one">
-      <img
-        src={movie.medium_cover_image}
-        alt={movie.title}
-        title={movie.title}
-      />
-      <div className="movie__one__data">
-        <h3 className="movie__one__title">{movie.title}</h3>
-        <h5 className="movie__one__like">Like: {movie.like_count}</h5>
-        <h5 className="movie__one__download">
-          Download: {movie.download_count}
-        </h5>
-        <p className="movie__one__summary">{movie.description_full}</p>
-        <button onClick={() => history.go(-1)}>Back</button>
+    <>
+      <div className="movie__one">
+        <img
+          src={movie.medium_cover_image}
+          alt={movie.title}
+          title={movie.title}
+        />
+        <div className="movie__one__data">
+          <h3 className="movie__one__title">{movie.title}</h3>
+          <h5 className="movie__one__like">Like: {movie.like_count}</h5>
+          <h5 className="movie__one__download">
+            Download: {movie.download_count}
+          </h5>
+          <h5 className="movie__one__rating">Rating: {movie.rating}</h5>
+          <ReactStars
+            classNames="movie__one__stars"
+            edit={false}
+            count={5}
+            size={24}
+            isHalf={true}
+            value={movie.rating / 2}
+          />
+          <p className="movie__one__summary">{movie.description_full}</p>
+          <button className="backBtn" onClick={() => history.push('/movies')}>
+            Back
+          </button>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

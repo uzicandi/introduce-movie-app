@@ -8,6 +8,8 @@ const Home = () => {
         <li>axios</li>
         <li>react-router</li>
         <li>reactjs-hooks-pagination</li>
+        <li>style-component</li>
+        <li>react-rating-stars-component</li>
       </ul>
     </div>
   );

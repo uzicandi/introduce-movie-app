@@ -10,7 +10,6 @@ const MovieList = styled.div`
     flex-wrap: wrap;
     padding: 50px;
     padding-top: 70px;
-    width: 100%;
   }
 `;
 
@@ -71,6 +70,7 @@ function Movies() {
               summary={movie.summary}
               poster={movie.medium_cover_image}
               genres={movie.genres}
+              rating={movie.rating}
             />
           ))}
         </ul>
