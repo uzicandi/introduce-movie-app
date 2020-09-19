@@ -8,7 +8,7 @@
   padding: 20px;
   border-radius: 5px;
   position: relative;
-  color: #adae89;
+  color: #2c2c2c;
   box-shadow: 0 13px 27px -5px rgba(50, 59, 93, 0.25),
     0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
 }
@@ -26,7 +26,6 @@
 .movie .movie__title,
 .movie .movie__year,
 .movie .movie__summary {
-  color: #2c2c2c;
   font-weight: 300;
 }
 
@@ -40,4 +39,14 @@
 
 .movie .movie__summary {
   margin: 30px 10px 10px 10px;
+}
+
+a.movie__detail {
+  margin: 10px;
+  color: #2c2c2c;
+  cursor: pointer;
+  text-decoration: none;
+}
+a.movie__detail:hover {
+  color: #3b88c3;
 }

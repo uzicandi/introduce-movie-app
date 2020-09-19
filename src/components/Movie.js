@@ -1,6 +1,7 @@
 import React from 'react';
 import './Movie.css';
-function Movie({ year, title, summary, poster, genres }) {
+
+function Movie({ id, year, title, summary, poster, genres }) {
   return (
     <div className="movie">
       <img src={poster} alt={title} title={title} />
@@ -15,6 +16,9 @@ function Movie({ year, title, summary, poster, genres }) {
         </ul> */}
         <h5 className="movie__year">{year}</h5>
         <p className="movie__summary">{summary.slice(0, 180)}...</p>
+        <a className="movie__detail" href={`/movies/${id}`}>
+          자세히
+        </a>
       </div>
     </div>
   );

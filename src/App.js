@@ -1,7 +1,8 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route, Link, Switch } from 'react-router-dom';
 import Movies from './Movies';
 import Home from './Home';
+import Detail from './components/Detail';
 import styled from 'styled-components';
 
 const Navigator = styled.div`
@@ -31,17 +32,19 @@ function App() {
   return (
     <>
       <Navigator>
-        <ul class="links">
-          <li class="link">
+        <ul className="links">
+          <li className="link">
             <Link to="/">Home</Link>
           </li>
-          <li class="link">
+          <li className="link">
             <Link to="/movies">Movies</Link>
           </li>
         </ul>
-
-        <Route path="/" exact={true} component={Home} />
-        <Route path="/movies" component={Movies} />
+        <Switch>
+          <Route path="/" exact={true} component={Home} />
+          <Route exact path="/movies" component={Movies} />
+          <Route path="/movies/:id" component={Detail} />
+        </Switch>
       </Navigator>
     </>
   );
