@@ -2,7 +2,7 @@ import React from 'react';
 import './Movie.css';
 import ReactStars from 'react-rating-stars-component';
 
-function Movie({ id, year, title, summary, poster, genres, rating }) {
+function Movie({ id, year, title, summary, poster, rating }) {
   return (
     <div className="movie">
       <img src={poster} alt={title} title={title} />

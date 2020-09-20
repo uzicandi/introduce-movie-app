@@ -60,7 +60,7 @@ function Detail({ match, history }) {
           />
           <p className="movie__one__summary">{movie.description_full}</p>
           <button className="backBtn" onClick={() => history.push('/movies')}>
-            Back
+            리스트로 돌아가기
           </button>
         </div>
       </div>
