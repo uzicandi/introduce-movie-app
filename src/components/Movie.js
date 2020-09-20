@@ -8,13 +8,6 @@ function Movie({ id, year, title, summary, poster, rating }) {
       <img src={poster} alt={title} title={title} />
       <div className="movie__data">
         <h3 className="movie__title">{title}</h3>
-        {/* <ul className="movie__genres">
-          {genres.map((genre, index) => (
-            <li key={index} className="genres__genre">
-              {genre}
-            </li>
-          ))}
-        </ul> */}
         <h5 className="movie__year">{year}</h5>
         <h5 className="movie__rating">Rating: {rating}</h5>
         <ReactStars

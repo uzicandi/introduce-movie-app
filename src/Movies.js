@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Movie from './components/Movie';
 import styled from 'styled-components';
@@ -19,26 +19,22 @@ function Movies() {
   const [loading, setLoading] = useState(null);
   const [error, setError] = useState(null);
   const [limit, setLimit] = useState(20);
-  // const paginate = () => {
-  //   setLimit(limit + 4);
-  // };
-  const loader = useRef(null);
 
-  const fetchMovies = async () => {
-    try {
-      setError(null);
-      setMovies(null);
-      setLoading(true);
-      const response = await axios.get(
-        `https://yts.mx/api/v2/list_movies.json?limit=${limit}`
-      );
-      console.log(response);
-
-      setMovies(response.data.data.movies);
-    } catch (e) {
-      setError(e);
-    }
-    setLoading(false);
+  const fetchMovies = () => {
+    axios
+      .get(`https://yts.mx/api/v2/list_movies.json?limit=${limit}`)
+      .then(response => {
+        setError(null);
+        setLoading(true);
+        console.log(response);
+        setMovies(response.data.data.movies);
+      })
+      .catch(e => {
+        setError(e);
+      })
+      .finally(() => {
+        setLoading(false);
+      });
   };
 
   useEffect(() => {
@@ -71,9 +67,6 @@ function Movies() {
                 rating={movie.rating}
               />
             ))}
-            <div className="loading" ref={loader}>
-              <h2>Load More</h2>
-            </div>
           </ul>
         </InfiniteScroll>
       </MovieList>

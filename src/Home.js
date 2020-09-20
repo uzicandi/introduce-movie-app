@@ -13,12 +13,11 @@ const Home = () => {
       <div className="home">
         <h1>사용된 라이브러리 및 프레임 워크</h1>
         <ul>
-          <li>axios</li>
-          <li>react-router</li>
-          <li>reactjs-hooks-pagination</li>
-          <li>style-component</li>
-          <li>react-rating-stars-component</li>
-          <li>react-infinite-scroll-component</li>
+          <li>axios : ^0.20.0</li>
+          <li>react-router-dom : ^5.2.0</li>
+          <li>style-components : ^5.2.0</li>
+          <li>react-rating-stars-component : ^2.2.0</li>
+          <li>react-infinite-scroll-component : ^5.1.0</li>
         </ul>
       </div>
     </HomeStyle>

@@ -16,11 +16,9 @@ function Detail({ match, history }) {
         setError(null);
         setMovie(null);
         setLoading(true);
-
         const response = await axios.get(
           `https://yts.mx/api/v2/movie_details.json?movie_id=${id}`
         );
-        console.log('response', response);
         setMovie(response.data.data.movie);
       } catch (e) {
         setError(e);
@@ -32,8 +30,6 @@ function Detail({ match, history }) {
   if (loading) return <div>로딩중...</div>;
   if (error) return <div>에러발생</div>;
   if (!movie) return null;
-
-  console.log('movie', movie);
 
   return (
     <>
