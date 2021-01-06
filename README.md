@@ -15,8 +15,9 @@ yarn start
 ## 사용한 기술
 
 - JavaScript
-- ReactJS
+- ReactJS, React Hooks
 - create-react-app, react-router-dom
+- styled-components
 
 ## 주요 기능
 
