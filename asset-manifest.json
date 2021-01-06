@@ -5,17 +5,17 @@
     "main.js.map": "/introduce-movie-app/static/js/main.84fecc64.chunk.js.map",
     "runtime-main.js": "/introduce-movie-app/static/js/runtime-main.0f257a3c.js",
     "runtime-main.js.map": "/introduce-movie-app/static/js/runtime-main.0f257a3c.js.map",
-    "static/js/2.d30212be.chunk.js": "/introduce-movie-app/static/js/2.d30212be.chunk.js",
-    "static/js/2.d30212be.chunk.js.map": "/introduce-movie-app/static/js/2.d30212be.chunk.js.map",
+    "static/js/2.028226dd.chunk.js": "/introduce-movie-app/static/js/2.028226dd.chunk.js",
+    "static/js/2.028226dd.chunk.js.map": "/introduce-movie-app/static/js/2.028226dd.chunk.js.map",
     "index.html": "/introduce-movie-app/index.html",
-    "precache-manifest.cb6965a64b45a160f65b1f0a7c860299.js": "/introduce-movie-app/precache-manifest.cb6965a64b45a160f65b1f0a7c860299.js",
+    "precache-manifest.9eebd8519a7f20c55419844d8e56bee5.js": "/introduce-movie-app/precache-manifest.9eebd8519a7f20c55419844d8e56bee5.js",
     "service-worker.js": "/introduce-movie-app/service-worker.js",
     "static/css/main.779247b9.chunk.css.map": "/introduce-movie-app/static/css/main.779247b9.chunk.css.map",
-    "static/js/2.d30212be.chunk.js.LICENSE.txt": "/introduce-movie-app/static/js/2.d30212be.chunk.js.LICENSE.txt"
+    "static/js/2.028226dd.chunk.js.LICENSE.txt": "/introduce-movie-app/static/js/2.028226dd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0f257a3c.js",
-    "static/js/2.d30212be.chunk.js",
+    "static/js/2.028226dd.chunk.js",
     "static/css/main.779247b9.chunk.css",
     "static/js/main.84fecc64.chunk.js"
   ]
