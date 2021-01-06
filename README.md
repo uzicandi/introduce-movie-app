@@ -3,10 +3,6 @@
 ## 설치
 
 ```
-npm install
-```
-
-```
 yarn install
 ```
 
