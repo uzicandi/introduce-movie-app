@@ -14,7 +14,6 @@ yarn start
 
 ## 사용한 기술
 
-- JavaScript
 - ReactJS, React Hooks
 - create-react-app, react-router-dom
 - styled-components
