@@ -20,6 +20,7 @@ npm start
 - ReactJS, React Hooks
 - create-react-app, react-router-dom
 - styled-components
+- netlify
 
 ## 주요 기능
 
