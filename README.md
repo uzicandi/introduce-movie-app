@@ -3,13 +3,13 @@
 ## 설치
 
 ```
-yarn install
+npm install
 ```
 
 ## 시작하기
 
 ```
-yarn start
+npm start
 ```
 
 ## 사용한 기술
