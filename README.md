@@ -3,15 +3,10 @@
 [🎬 구현화면 보기](https://5ff5ce9a62ce80edadbe6be0--suspicious-hopper-e18581.netlify.app/
 )
 
-## 설치
+## 설치 & 시작
 
 ```
 npm install
-```
-
-## 시작하기
-
-```
 npm start
 ```
 
